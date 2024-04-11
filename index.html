@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,34 @@
     <!-- Optionally, add a shortcut icon for older browsers -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <div class="container">
         <h1>A simple color picker - HTML / CSS / JavaScript</h1>
-        <h2>It can be used with browsers that support 
+        <h2>It can be used with browsers that support
             <code>input[type=color]</code>
         </h2>
         <h3>Choose a color from color picker then click on the HEX code to copy HEX code</h3>
     </div>
 
 
-    <div class="color-picker">
-        <p>Choose Color</p>
+    <div class="color-picker"
+        <p>Pick a Color Here</p>
         <label class="pickerContainer" for="colorPicker">
             <input type="color" name="color" id="colorPicker" value="#1dbbce">
         </label>
     </div>
+
+    <!-- Add this div container for displaying the selected color -->
+    <div class="colorView">
+        <h1>Color Card</h1>
+        <div id="selectedColorContainer">
+            <!-- Color picker will be added here -->
+        </div>
+        <!-- <button id="copyHexButton">Copy Color</button> -->
+    </div>
+
 
     <footer class="footer">
         <h1>crafted with ❤️ by <a href="https://github.com/anuragbehura" target="_blank">Anurag Behura</a></h1>
@@ -34,4 +46,5 @@
 
 </body>
 <script src="./assets/js/main.js"></script>
+
 </html>

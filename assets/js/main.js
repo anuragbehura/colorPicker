@@ -1,7 +1,7 @@
 document.querySelectorAll('input[type=color]').forEach(function(picker) {
     var targetLabel = document.querySelector('label[for="' + picker.id + '"]');
     var colorArea = document.createElement('span');
-    colorArea.classList.add('color-value'); // Add class for styling for the color value.
+    colorArea.classList.add('color-value'); // Add class for styling
 
     colorArea.innerHTML = picker.value;
     targetLabel.appendChild(colorArea);
@@ -10,6 +10,9 @@ document.querySelectorAll('input[type=color]').forEach(function(picker) {
     picker.addEventListener('input', function() {
         colorArea.innerHTML = picker.value;
         console.log(picker.value);
+
+        // Update the background color of the selected color container
+        document.getElementById('selectedColorContainer').style.backgroundColor = picker.value;
     });
 
     // Add click event listener to copy color value to clipboard
