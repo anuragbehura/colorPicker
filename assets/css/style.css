@@ -84,4 +84,29 @@ code{
     opacity: 1;
 }
 
+.color-value {
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.color-value:hover {
+    background-color: #4f4f4f;
+    color: #fff;
+}
+
+.pickerContainer{
+    width: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
